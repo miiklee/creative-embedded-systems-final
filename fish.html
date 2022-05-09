@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fin-formation!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+	  	margin: 0;
+		}
+
+		/* Style the headers */
+		.header1 {
+	  		background-color: #219EBC;
+	  		padding-top: 20px;
+	  		padding-bottom: 1px;
+	  		text-align: center;
+	  		font-family: Stopwatch;
+	  		font-size:  20px;
+	  		color: white;
+		}
+		.header2 {
+	  		background-color: #219EBC;
+	  		padding-top: 1px;
+	  		padding-bottom: 20px;
+	  		text-align: center;
+	  		font-family: Plum;
+	  		font-size:  10px;
+	  		color: white;
+		}
+		.header3 { /* fish name format */
+			background-color: white;
+			text-align: center;
+			font-family: Stopwatch;
+			font-size: 30px;
+			color: #FB8500;
+		}
+
+		.column {
+	 			float: center;
+	 			background-color: white;
+		}
+
+		.column b {
+		  float: center;
+		  display: inline-block;
+		  width: 600px;
+		  padding: 30px;
+		 	background-color: white;
+		}
+
+		.row{
+			display: flex;
+		}
+
+		.row a {
+		  float: center;
+	  	display: flex;
+		  width: auto;
+		  padding: 30px;
+		  padding-left: 15px;
+		  padding-right: 15px;
+		 	background-color: #8ECAE6;
+		}
+
+		/* Change color on hover */
+		.row a:hover {
+		  background-color: #FB8500;
+		}
+
+		.fish{
+	  		text-align: left;
+	  		font-family: Plum;
+	  		font-size:  5;
+	  		color: #219EBC;
+		}
+
+		.fish c{
+			margin: 20px;
+			width: auto;
+		}
+
+		.topnav {
+	  	overflow: hidden;
+	  	background-color: #8ECAE6;
+		}
+
+		.center {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+
+
+	</style>
+</head>
+
+
+<body>
+
+	<div class="header1">
+	  <h1>FIN-FORMATION</h1> 
+	</div>
+
+	<div class="header2">
+	  <h1>Click on a fish to make the model swim its speed</h1>
+	</div>
+
+	<div class="column">
+
+
+		<!-- Fish top photos-->
+		<div class="row">
+
+			<a> <img src="clownfish.jpg" alt="clownfish" width="176px" class="center" onclick="pickFish('clownfish')"></a>
+
+			<a> <img src="salmon.jpg" alt="salmon" width="176px" class="center" onclick="pickFish('salmon')"> </a>
+
+			<a> <img src="koi.jpg" alt="salmon" width="176px" class="center" onclick="pickFish('koi')"></a>
+
+			<a> <img src="shark.jpg" alt="salmon" width="176px" class="center" onclick="pickFish('shark')"></a>
+
+			<a> <img src="anchovy.jpg" alt="salmon" width="175px" class="center" onclick="pickFish('anchovy')"></a>
+
+			<a> <img src="pufferfish.jpg" alt="salmon" width="176px" class="center" onclick="pickFish('pufferfish')"></a>
+
+			<a> <img src="guppy.jpg" alt="salmon" width="175px" class="center" onclick="pickFish('guppy')"></a>
+
+
+		</div>
+
+		<div class="column"> 
+
+			<b class="fish" id="clownfish" style="display:none">
+				<c> <img src="clownfish2.jpg" alt="clownfish" width="500px" class="center"> </c>
+				<c> <div class="column"> 
+					<b> 
+						<div class="header3"> <h3>CLOWN FISH</h3> </div>
+
+						Clown fish are saltwater fish that live in coral reefs around the world. They gained popularity after their starring role in the 2003 film Finding Nemo. While they--as all fish--swim at a variety of speeds, Clown fish on average swim 3 miles per hour--thats about 4.4 feet per second, or at a burst of speed, can reach up to 18 miles per hour! 
+					</b> 
+				</div> </c>
+			</b>
+
+			<b class="fish" id="salmon" style="display:none"> 
+				<c> <img src="salmon2.jpg" alt="salmon" width="500px" class="center"></c> 
+				<c> <div class="column"> <b> <div class="header3"> <h3>SALMON</h3> </div>
+				
+				Salmon are anadromous, meaning they live in both fresh and salt water. While they are born in freshwater streams, they spend most of their life at sea, only returning to the freshwater when it's time to make baby salmons. They swim at speeds around 3.4 feet per second, and are also well known for their popularity with the dining services in charge of Faculty house.
+			</b> </div> </c> </b>
+
+
+			<b class="fish" id="pufferfish" style="display:none">
+				<c> <img src="pufferfish2.jpg" alt="pufferfish" width="500px" class="center"></c> 
+				<c> <div class="column"> <b> <div class="header3"> <h3>PUFFERFISH</h3> </div>
+					
+					Pufferfish are saltwater fish living in tropical areas. They are among the slowest swimmers on our list--at 2 feet per second--as their adaptations do not lend themselves well to speed. Instead of swimming quickly to escape predators, their odd shape and poisonous spines scare away would be predators. They are also able inflate themselves as a defense mechanism and giving them their name.
+			</b> </div> </c> </b>
+
+
+			<b class="fish" id="koi" style="display:none">
+				<c> <img src="koi2.jpg" alt="koi" width="500px" class="center"></c>
+				<c> <div class="column"> <b> <div class="header3"> <h3>KOI</h3> </div>
+					
+					Often known for their presence in ornamental ponds, koi are cold water fish bred by japanese farmers for their striking colors. While they were originally intended as food, they are now  purely decorative. They swim at about 3.6 feet per second...but mostly in circles since they do not tend to be out in the wild.
+
+			</b> </div> </c> </b>
+
+
+			<b class="fish" id="anchovy" style="display:none">
+				<c> <img src="anchovy2.jpg" alt="anchovy" width="500px" class="center"> </c> 
+				<c> <div class="column"> <b> <div class="header3"> <h3>ANCHOVIES</h3> </div>
+					Anchovies are small saltwater fish, which--according to google--people put on pizza sometimes. This sounds like a terrible idea to me, but humans are idiots, so it is not surprising. They are small and swim in packs. They swim 5 body lengths per second, which is approximately 1 foot per second,  however, to account for the size of the model fish, it is moving at 3 ft/s which is equivalent to its body length (7") times 5.
+			</b> </div> </c> </b>
+
+
+			<b class="fish" id="shark" style="display:none">
+				<c> <img src="shark2.jpg" alt="shark" width="500px" class="center"></c> 
+				<c> <div class="column"> <b> <div class="header3"> <h3>SHARKS</h3> </div>
+					Contrary to the argument my roommates and I got into when making this list, sharks are in fact fish. I'm not sure what else they would be, but I don't buy the concept of them being fish... they should be their own thing. However, they are in fact fish and are as such included here. There are many varieties of sharks, but I used a Great White Shark as the basis for this project. They swim at 11.7 feet per second and can in fact never stop swimming or they will sink to the bottom of the ocean.
+			</b> </div> </c> </b>
+
+
+			<b class="fish" id="guppy" style="display:none"> 
+				<c> <img src="guppy2.jpg" alt="guppy" width="500px" class="center"> </c>
+				<c> <div class="column"> <b> <div class="header3"> <h3>GUPPIES</h3> </div>
+					Guppies are popular in aquariums because they are pretty. However, the are indigenous to saltwater habitats in South America. They have also been distributed into habitats around the world to help control mosquito  populations... this has been bad though because they have in turn destroyed native fish populations.  Guppies are the colonizers of the fish world, and as such, their useless-ness transfers into their swimming speeds, a mere 2 feet per second. This website is officially a guppy hate page. Thank you for coming to my TED Talk.
+			</b> </div> </c> </b>
+		
+		</div> <!-- end of column -->
+
+	</div> <!-- end of row -->
+
+
+
+	<script src="fish.js"></script>
+</body>
+</html>
